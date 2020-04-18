@@ -1,5 +1,5 @@
-<?php 
-    require_once 'Config/init.php';
+<?php
+require_once 'Config/init.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,13 +15,21 @@
 </head>
 
 <body>
-    <form name="login" id="login_form">
-        <label for="uname">Username:</label>
-        <input name='uname' type="text">
-        <label for="password">Password:</label>
-        <input type="text" name="password">
-        <input type="hidden" value="<?php echo 'sumNum8' ?>">
-    </form>
+    <div>
+        <form name="login" id="login_form">
+            <label for="uname">Username:</label>
+            <input name='uname' type="text">
+            <label for="password">Password:</label>
+            <input type="text" name="password">
+            <input type="submit">
+            <input type="hidden" value="<?php echo 'sumNum8' ?>">
+        </form>
+        <div id="register">
+            <a href="#">Register</a>
+            <span>/</span>
+            <a href="#">Forgot password</a>
+        </div>
+    </div>
 </body>
 
 </html>

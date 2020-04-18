@@ -7,11 +7,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   background-color: rgba(12, 20, 87, 0.5);
+}
+#register {
+  display: flex;
+  font-size: 1.5rem;
+  margin: 1rem auto 1rem 0;
+}
+#register > * {
+  padding: 0.2rem;
 }
 #login_form {
   display: flex;
@@ -19,6 +26,12 @@ body {
 }
 #login_form input {
   border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+#login_form input[type="submit"] {
+  margin: 2rem auto 1rem 0;
+  max-width: 70%;
 }
 #login_form label {
   font-size: 1.6rem;
