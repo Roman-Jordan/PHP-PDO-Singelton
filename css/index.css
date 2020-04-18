@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(12, 20, 87, 0.5);
+}
+#login_form {
+  display: flex;
+  flex-direction: column;
+}
+#login_form input {
+  border-radius: 0.5rem;
+}
+#login_form label {
+  font-size: 1.6rem;
+}
+#login_form > * {
+  padding: 0.5rem;
+}
