@@ -1,44 +1,8 @@
-html {
-  font-size: 62.5%;
-  height: 100%;
-}
+@import './reset.less';
+@import './mixins.less';
+@import './vars.less';
+@import './globals.less';
 
-body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(012, 020, 087, 0.5);
-}
 
-#register {
-  display: flex;
-  font-size: 1.5rem;
-  margin: 1rem auto 1rem 0;
-  & >*{
-      padding: .2rem;
-  }
-}
-#login_form {
-  display: flex;
-  flex-direction: column;
-  input {
-    border-radius: 0.5rem;
-    border: none;
-    outline: none;
-  }
-  input[type="submit"] {
-    margin: 2rem auto 1rem 0;
-    max-width: 70%;
-  }
-  label {
-    font-size: 1.6rem;
-  }
-
-  & > * {
-    padding: 0.5rem;
-  }
-}
+//Components
+@import './components/login.less';

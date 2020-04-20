@@ -15,8 +15,8 @@ require_once 'Config/init.php';
 </head>
 
 <body>
-    <div>
-        <form name="login" id="login_form">
+    <div id="login_form_container">
+        <form name="login" id="login_form" method="post">
             <label for="uname">Username:</label>
             <input name='uname' type="text">
             <label for="password">Password:</label>
@@ -27,9 +27,10 @@ require_once 'Config/init.php';
         <div id="register">
             <a href="#">Register</a>
             <span>/</span>
-            <a href="#">Forgot password</a>
+            <a href="#">Forgot Password</a>
         </div>
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 </body>
 
 </html>
