@@ -1,6 +1,4 @@
-<?php
-require_once 'Config/init.php';
-?>
+<?php require_once 'config/init.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
