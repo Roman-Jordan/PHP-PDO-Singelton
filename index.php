@@ -1,4 +1,4 @@
-<?php require_once 'config/init.php'; ?>
+<?php require_once 'core/init.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,6 +27,8 @@
             <span>/</span>
             <a href="#">Forgot Password</a>
         </div>
+        <?php DB::getInstance();?>
+        <?php echo Config::get('mysql/host');?>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 </body>
