@@ -27,8 +27,14 @@
             <span>/</span>
             <a href="#">Forgot Password</a>
         </div>
-        <?php DB::getInstance();?>
-        <?php echo Config::get('mysql/host');?>
+        <?php
+        $user = DB::getInstance()->insert('users', array(
+            'username' =>'Bill',
+            'password' =>'password',
+            'salt'     => 'salt'
+        ));
+       
+        ?>
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 </body>
