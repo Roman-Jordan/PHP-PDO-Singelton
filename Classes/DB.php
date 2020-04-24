@@ -12,7 +12,6 @@ class DB
     {
         try {
             $this->_pdo = new PDO('mysql:host=' . Config::get('mysql/host') . ';dbname=' . Config::get('mysql/db'), Config::get('mysql/username'), Config::get('mysql/password'));
-            echo 'Connected';
         } catch (PDOException $e) {
             die($e->getMessage());
         }
@@ -97,29 +96,30 @@ class DB
 
         if (!$this->query($sql, $fields)->error()) {
             return true;
-        } else {
-            print_r($this->error());
-        }
+        } 
 
         return false;
     }
 
-    public function update($table, $id, $fields)
+    public function update($table, $id, $fields = array())
     {
         $set = '';
         $x = 1;
 
         foreach($fields as $name => $value){
             $set .= "{$name} = ?";
+
             if($x < count($fields)){
                 $set .= ', ';
             }
+            $x++;
         }
 
-        $sql = "UPDATE {$table} SET {$set} WHERE id = {$id}";
-        if(!$this->query($sql,$fields)->error()){
+        $sql = "UPDATE {$table} SET {$set} WHERE id = {$id};";
+        if (!$this->query($sql, $fields)->error()) {
             return true;
-        }
+        } 
+
         return false;
     }
 

@@ -28,10 +28,10 @@
             <a href="#">Forgot Password</a>
         </div>
         <?php
-        $user = DB::getInstance()->insert('users', array(
+        $user = DB::getInstance()->update('users', 1, array(
             'username' =>'Bill',
             'password' =>'password',
-            'salt'     => 'salt'
+            'salt'     =>'cat'
         ));
        
         ?>

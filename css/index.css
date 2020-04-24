@@ -142,6 +142,11 @@ body {
   background-color: rgba(12, 20, 87, 0.8);
   font-family: "Ubuntu", sans-serif;
 }
+p.formError {
+  font-size: 1.4rem;
+  color: red;
+  text-transform: capitalize;
+}
 #login_form_container {
   padding: 3rem;
   background-color: #fff;
